@@ -1,14 +1,14 @@
-var score = 75;    // Score
-var msg = '';      // Message
+var score = 75;
+var msg = '';
 
 function congratulate() {
   msg += 'Congratulations! ';
 }
 
-if (score >= 50) {  // If score is 50 or more
+if(score > 50) {
   congratulate();
-  msg += 'Proceed to the next round.';
+  msg += 'Proceed to the next round. ';
 }
 
 var el = document.getElementById('answer');
-el.innerHTML = msg;
+el.textContent = msg;

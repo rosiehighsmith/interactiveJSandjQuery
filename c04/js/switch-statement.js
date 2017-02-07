@@ -1,23 +1,19 @@
-var msg;        // Message
-var level = 2;  // Level
+var msg;
+var level = 9;
 
-// Determine message based on level
-switch (level) {
+switch(level) {
 case 1:
-    msg = 'Good luck on the first test';
-    break;
-
-case 2:
-    msg = 'Second of three - keep going!';
-    break;
-
+  msg = 'Good luck on your first test.';
+  break;
+case 2: 
+  msg = 'Almost done, test 2 of 3!';
+  break;
 case 3:
-    msg = 'Final round, almost there!';
-    break;
-
+  msg = 'The last test!';
+  break;
 default:
-    msg = 'Good luck!';
-    break;
+  msg = 'Test';
+  break;
 }
 
 var el = document.getElementById('answer');
